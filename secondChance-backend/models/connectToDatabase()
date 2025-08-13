@@ -1,0 +1,13 @@
+const { MongoClient } = require('mongodb');
+const uri = process.env.MONGO_URI;
+const client = new MongoClient(uri);
+
+async function connectToDatabase() {
+    if (!client.isConnected) {
+        await client.connect();
+        console.log("Connected to MongoDB");
+    }
+    return client.db("secondChanceDB");
+}
+
+module.exports = { connectToDatabase };
