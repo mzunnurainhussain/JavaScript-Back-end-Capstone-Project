@@ -1,0 +1,20 @@
+---
+name: User Story
+about: Template for creating user stories
+title: 'USER STORY: [Title]'
+labels: ''
+assignees: ''
+---
+
+**User Story:**
+As a [type of user], I need [function], so that [benefit].
+
+**Acceptance Criteria:**
+- Given [context], when [action], then [outcome].
+- Given [context], when [action], then [outcome].
+
+**Definition of Done:**
+- All acceptance criteria are met.
+- Code is reviewed and approved.
+- Tests pass.
+- Feature is deployed to the staging environment.
